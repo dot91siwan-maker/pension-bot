@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: pension-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python pension_bot.py
+    plan: free
